@@ -1,0 +1,17 @@
+<section class="movie-details">
+    <div class="details">
+    <h1><%= @movie.title %> </h1> 
+      <h2>
+        <%=total_gross(@movie) %>
+      </h2>
+      <h3>
+        <%= @movie.description %>
+      </h3>
+      <%= year_of(@movie) %>
+    </div>
+    </section>
+
+    <section class="admin">
+      <%= link_to "Edit", edit_movie_path(@movie), class:"button"%>
+    </section>
+      
