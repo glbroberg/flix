@@ -12,6 +12,11 @@
 #  updated_at  :datetime         not null
 #
 class Movie < ApplicationRecord
+
+  def upcoming 
+    Movie.where()
+  end 
+
   def flop?
     total_gross.blank? || total_gross < 225_000_000
   end
